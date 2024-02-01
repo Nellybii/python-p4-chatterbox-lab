@@ -12,3 +12,6 @@ class Message(db.Model, SerializerMixin):
     __tablename__ = 'messages'
 
     id = db.Column(db.Integer, primary_key=True)
+    body=db.Column(db.String, nullable=False)
+    username=db.Column(db.String, nullable=False)
+    Updated_at=db.Column(db.DateTime, nullable=False)
